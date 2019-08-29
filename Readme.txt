@@ -1,4 +1,4 @@
-AOP
+AOP(using Java based Configuration)
 
 1. Functional Programming: A single program call each other functions . Problem is that if design is complex, interlinks are messy.SO we use OOps. Not all things can be classified as Objects though. Like a logmessage to be used in all methods. we will have a logger class for that.
 But it will cause too many relationships.
