@@ -35,6 +35,13 @@ public class AspectHelper {
 	 *  Within the body of the advice, calling proceed() on the ProceedingJoinPoint 
 	 *  causes the underlying method to execute. The proceed method may also be called passing in an Object[] - 
 	 * the values in the array will be used as the arguments to the method execution when it proceeds.*/
+	// Passing a JoinPoint Object 
+    // into parameters of the method 
+    // with the annotated advice 
+    // enables to print the information 
+    /// when the advice is executed 
+    // with the help of toString() method 
+    // present in it. 
 	@Around("pointcutForAround()")
 	public Object loggingadvice1(ProceedingJoinPoint pjp) throws Throwable {
 	
