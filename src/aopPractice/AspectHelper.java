@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
  * (transaction, logger etc) is known as the aspect. 
  * It can be normal class configured through XML configuration or 
  * through regular classes annotated with @Aspect.*/
+// This class is anotated with @Aspect 
+// and will contain advices.
 @Component
 @Aspect
 @EnableAspectJAutoProxy
