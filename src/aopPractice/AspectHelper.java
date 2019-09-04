@@ -23,6 +23,11 @@ public class AspectHelper {
 	/*Weaving: The process of linking Aspects with an Advised Object. 
 	 * It can be done at load time, compile time or at runtime time. 
 	 * Spring AOP does weaving at runtime*/
+	// pointcutForAround() is a dummy method 
+    // required to hold @Pointcut annotation 
+    // pointcutForAround() can be used instead of writing line 35
+    // whenever required, as done in line 51. 
+    // This prevents a repetition of code.
 
 	@Pointcut("execution(public void show())")
 	public void pointcutForAround()  {
@@ -42,6 +47,7 @@ public class AspectHelper {
     /// when the advice is executed 
     // with the help of toString() method 
     // present in it. 
+	// pointcut pointcutForAround() is used to avoid repeatition of code
 	@Around("pointcutForAround()")
 	public Object loggingadvice1(ProceedingJoinPoint pjp) throws Throwable {
 	
