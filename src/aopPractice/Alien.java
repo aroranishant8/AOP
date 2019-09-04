@@ -3,7 +3,7 @@ package aopPractice;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Alien {
+public class Alien  {
 	
 	
 	public void show()
