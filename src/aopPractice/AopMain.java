@@ -10,6 +10,7 @@ public class AopMain {
 	public static void main(String[] args) 
 	
 	{
+
 		
 		applicationContext = new AnnotationConfigApplicationContext(JavaConfig.class);
 		Alien al=(Alien) applicationContext.getBean("alien");
